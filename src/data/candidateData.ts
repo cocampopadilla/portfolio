@@ -62,7 +62,7 @@ export interface CandidateProfile {
   location: string;
   email: string;
   phone: string;
-  github: string;
+  github?: string;
   linkedin: string;
   bio: string;
   genericBio?: string;
@@ -86,7 +86,6 @@ export const candidateData: CandidateProfile = {
   location: "Chicago, IL",
   email: "cocampopadilla@gmail.com",
   phone: "312-479-3886",
-  github: "github.com/cocampopadilla",
   linkedin: "linkedin.com/in/cocampo-padilla",
   genericTitle: "Software Engineer & QA Engineer",
   bio: "Master of Computer Science graduate from UIUC (GPA 3.74, Completed August 2026) and QA Engineer at Motorola Mobility. Experienced in React, Python, C++, JavaScript, FastAPI, and software test automation. Driven by continuous learning and building high-reliability, developer-centric documentation platforms for Adyen.",
@@ -123,7 +122,7 @@ export const candidateData: CandidateProfile = {
     {
       category: "Tools, Cloud & Systems",
       items: [
-        { name: "Git / GitHub CI/CD", proficiency: 92 },
+        { name: "Git & CI/CD Pipelines", proficiency: 92 },
         { name: "GCP (Google Cloud) & AWS", proficiency: 84 },
         { name: "Ansible & Linux Systems", proficiency: 86 },
         { name: "Firebase & MySQL Databases", proficiency: 85 }

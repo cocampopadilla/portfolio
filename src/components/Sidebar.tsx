@@ -9,7 +9,8 @@ import {
   Terminal, 
   Github,
   Linkedin,
-  Mail
+  Mail,
+  Download
 } from 'lucide-react';
 import { candidateData } from '../data/candidateData';
 
@@ -144,16 +145,18 @@ export const Sidebar: React.FC<SidebarProps> = ({
             >
               <Mail className="w-3.5 h-3.5" />
             </a>
-            <a 
-              href={`https://${candidateData.github}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-1.5 rounded border hover:opacity-80 transition-opacity"
-              style={{ backgroundColor: 'var(--bg-tag)', borderColor: 'var(--border-color)', color: 'var(--text-muted)' }}
-              title="GitHub Profile"
-            >
-              <Github className="w-3.5 h-3.5" />
-            </a>
+            {candidateData.github && (
+              <a 
+                href={`https://${candidateData.github}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-1.5 rounded border hover:opacity-80 transition-opacity"
+                style={{ backgroundColor: 'var(--bg-tag)', borderColor: 'var(--border-color)', color: 'var(--text-muted)' }}
+                title="GitHub Profile"
+              >
+                <Github className="w-3.5 h-3.5" />
+              </a>
+            )}
             <a 
               href={`https://${candidateData.linkedin}`}
               target="_blank"
@@ -163,6 +166,17 @@ export const Sidebar: React.FC<SidebarProps> = ({
               title="LinkedIn Profile"
             >
               <Linkedin className="w-3.5 h-3.5" />
+            </a>
+            <a 
+              href="/cristianocampopadilla_resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              download="Cristian_Ocampo_Padilla_Resume.pdf"
+              className="p-1.5 rounded border hover:opacity-80 transition-opacity ml-auto"
+              style={{ backgroundColor: 'var(--bg-tag)', borderColor: 'var(--border-color)', color: 'var(--text-muted)' }}
+              title="Download PDF Resume"
+            >
+              <Download className="w-3.5 h-3.5" />
             </a>
           </div>
         </div>

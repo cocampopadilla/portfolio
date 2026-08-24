@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Code2, ExternalLink, Github, Terminal, Copy, Check, Sparkles, Layers, Zap } from 'lucide-react';
+import { Code2, ExternalLink, Terminal, Copy, Check, Sparkles, Layers, Zap } from 'lucide-react';
 import { candidateData, ProjectItem } from '../../data/candidateData';
 
 export const ProjectsSection: React.FC = () => {
