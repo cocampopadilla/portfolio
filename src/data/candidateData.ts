@@ -86,10 +86,10 @@ export const candidateData: CandidateProfile = {
   phone: "312-479-3886",
   github: "github.com/cocampo-pad",
   linkedin: "linkedin.com/in/cocampo-padilla",
-  bio: "Master of Computer Science (UIUC, 4.0 GPA) and QA Engineer at Motorola Mobility. Experienced in React, Python, C++, JavaScript, FastAPI, and software test automation. Driven by continuous learning and building high-reliability, developer-centric documentation platforms for Adyen.",
-  
+  bio: "Master of Computer Science (UIUC, 3.74 GPA) and QA Engineer at Motorola Mobility. Experienced in React, Python, C++, JavaScript, FastAPI, and software test automation. Driven by continuous learning and building high-reliability, developer-centric documentation platforms for Adyen.",
+
   summaryMetrics: [
-    { label: "Master's Degree", value: "M.C.S.", detail: "UIUC (GPA 4.00 / 4.00)" },
+    { label: "Master's Degree", value: "M.C.S.", detail: "UIUC (GPA 3.74 / 4.00)" },
     { label: "Bachelor's Degree", value: "B.S. CS", detail: "UIUC (GPA 3.67 / 4.00)" },
     { label: "Current Role", value: "QA Engineer", detail: "Motorola Mobility (Apr 2026+)" },
     { label: "Work Auth", value: "US Authorized", detail: "Zero Sponsorship Needed" }
@@ -134,9 +134,9 @@ export const candidateData: CandidateProfile = {
       major: "Computer Science",
       period: "Aug 2025 – Aug 2026",
       location: "Chicago, IL",
-      gpa: "4.00 / 4.00",
+      gpa: "3.74 / 4.00",
       highlights: [
-        "Perfect 4.00/4.00 GPA in advanced graduate computer science curriculum",
+        "3.74/4.00 GPA in advanced graduate computer science curriculum",
         "Focused on Cloud Computing, Machine Learning for Software Engineering, Computer Security, and IoT Systems"
       ],
       coursework: [
@@ -277,7 +277,7 @@ export const createReservation = async (reservationData: ReservationPayload) => 
       id: "formula-2",
       title: "We make good choices for the long term",
       quote: "Prioritizing clean architecture, technical debt reduction, and robust foundations over quick hacks.",
-      candidateAlignment: "With two CS degrees from UIUC (4.0 MCS GPA) and hands-on QA experience, I write clean, maintainable code and invest in test automation for long-term reliability.",
+      candidateAlignment: "With two CS degrees from UIUC (3.74 MCS GPA) and hands-on QA experience, I write clean, maintainable code and invest in test automation for long-term reliability.",
       practicalExample: "Building a test automation project to generate HTML reports and adopting new Android tools to scale testing infrastructure.",
       iconName: "ShieldCheck"
     },
@@ -311,7 +311,7 @@ export const createReservation = async (reservationData: ReservationPayload) => 
         data: {
           name: "Cristian Ocampo-Padilla",
           currentRole: "QA Engineer at Motorola Mobility",
-          education: "Master of Computer Science (UIUC, 4.0 GPA) & BS CS (UIUC)",
+          education: "Master of Computer Science (UIUC, 3.74 GPA) & BS CS (UIUC)",
           location: "Chicago, IL",
           gradDate: "Aug 2026 (MCS Completed)",
           sponsorshipRequired: false,
@@ -332,7 +332,7 @@ export const createReservation = async (reservationData: ReservationPayload) => 
           {
             degree: "Professional Master of Computer Science (MCS)",
             period: "Aug 2025 – Aug 2026",
-            gpa: "4.00 / 4.00",
+            gpa: "3.74 / 4.00",
             courses: ["Cloud Computing", "Machine Learning for SWE", "Computer Security", "IoT Systems"]
           },
           {
