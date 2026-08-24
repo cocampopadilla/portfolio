@@ -10,7 +10,6 @@ import { ExperienceSection } from './components/sections/ExperienceSection';
 import { ProjectsSection } from './components/sections/ProjectsSection';
 import { AiInnovationSection } from './components/sections/AiInnovationSection';
 import { AdyenFormulaSection } from './components/sections/AdyenFormulaSection';
-import { ApiConsoleSection } from './components/sections/ApiConsoleSection';
 
 import { Menu } from 'lucide-react';
 
@@ -75,8 +74,6 @@ export const App: React.FC = () => {
           <AiInnovationSection />
 
           <AdyenFormulaSection />
-
-          <ApiConsoleSection />
 
           {/* Page Footer */}
           <footer className="pt-8 border-t space-y-4 text-xs font-mono" style={{ borderColor: 'var(--border-color)', color: 'var(--text-muted)' }}>

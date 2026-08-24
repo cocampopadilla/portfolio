@@ -1,5 +1,5 @@
 import React from 'react';
-import { BookOpen, CheckCircle2, FileText, ArrowRight, ShieldCheck, MapPin, Mail, Github, Linkedin, Award, Terminal, Phone } from 'lucide-react';
+import { CheckCircle2, Mail, Linkedin, Award, ShieldCheck, Phone, Code2 } from 'lucide-react';
 import { candidateData } from '../../data/candidateData';
 
 interface OverviewSectionProps {
@@ -53,12 +53,20 @@ export const OverviewSection: React.FC<OverviewSectionProps> = ({ onNavigateSect
         {/* Action Button Row */}
         <div className="mt-6 flex flex-wrap items-center gap-3">
           <button 
-            onClick={() => onNavigateSection('api-console')}
+            onClick={() => onNavigateSection('projects')}
             className="btn-primary"
           >
-            <Terminal className="w-4 h-4" />
-            <span>Test Candidate Endpoints Live</span>
+            <Code2 className="w-4 h-4" />
+            <span>Explore Technical Projects</span>
           </button>
+          <a
+            href={`mailto:${candidateData.email}`}
+            className="px-4 py-2 text-xs font-semibold rounded-md border transition-colors flex items-center gap-2"
+            style={{ backgroundColor: 'var(--bg-card)', borderColor: 'var(--border-color)', color: 'var(--text-main)' }}
+          >
+            <Mail className="w-4 h-4 text-[#00A254]" />
+            <span>Get in Touch</span>
+          </a>
         </div>
       </div>
 

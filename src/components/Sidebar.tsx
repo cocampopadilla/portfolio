@@ -36,9 +36,7 @@ export const navItems: NavItem[] = [
   { id: 'projects', label: 'Featured Projects', icon: Code2, category: 'TECHNICAL PORTFOLIO', badge: '3 Apps' },
   { id: 'ai-innovation', label: 'QA & Testing Rigor', icon: Bug, category: 'TECHNICAL PORTFOLIO', badge: 'Motorola QA' },
   
-  { id: 'adyen-formula', label: 'Adyen Formula Fit', icon: Target, category: 'CULTURE & FIT', badge: '100% Fit' },
-  
-  { id: 'api-console', label: 'Interactive API Console', icon: Terminal, category: 'DEVELOPER TOOLS', badge: 'Try It' }
+  { id: 'adyen-formula', label: 'Adyen Formula Fit', icon: Target, category: 'CULTURE & FIT', badge: '100% Fit' }
 ];
 
 export const Sidebar: React.FC<SidebarProps> = ({

@@ -34,8 +34,7 @@ export const SearchModal: React.FC<SearchModalProps> = ({
     { id: 's-6', title: 'Inventory & Reservation Web App (React + FastAPI)', category: 'Projects', description: candidateData.projects[0].summary, sectionId: 'projects', icon: Code2 },
     { id: 's-7', title: 'Enhanced GPS Grandmaster (Raspberry Pi 3)', category: 'Projects', description: candidateData.projects[1].summary, sectionId: 'projects', icon: Code2 },
     { id: 's-[#]', title: 'Testing, QA & System Debugging Rigor', category: 'Testing QA', description: 'Manual feature testing, test case automation, HTML execution reports, and root-cause log analysis.', sectionId: 'ai-innovation', icon: Bug },
-    { id: 's-8', title: 'The Adyen Formula Fit Matrix', category: 'Culture', description: 'Launch fast and iterate, build for long term, developer empathy.', sectionId: 'adyen-formula', icon: Sparkles },
-    { id: 's-9', title: 'Interactive API Explorer Console', category: 'Developer Tools', description: 'Test GET/POST endpoints live: candidate profile, education, schedule interview.', sectionId: 'api-console', icon: Terminal }
+    { id: 's-8', title: 'The Adyen Formula Fit Matrix', category: 'Culture', description: 'Launch fast and iterate, build for long term, developer empathy.', sectionId: 'adyen-formula', icon: Sparkles }
   ];
 
   const filteredItems = items.filter(item => 

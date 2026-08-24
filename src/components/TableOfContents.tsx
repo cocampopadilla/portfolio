@@ -14,8 +14,7 @@ const tocData: TocItem[] = [
   { id: 'experience', title: 'Experience & Motorola QA', level: 1 },
   { id: 'projects', title: 'Featured Projects', level: 1 },
   { id: 'ai-innovation', title: 'QA & Testing Rigor', level: 1 },
-  { id: 'adyen-formula', title: 'Adyen Formula Alignment', level: 1 },
-  { id: 'api-console', title: 'Interactive API Explorer', level: 1 }
+  { id: 'adyen-formula', title: 'Adyen Formula Alignment', level: 1 }
 ];
 
 export const TableOfContents: React.FC = () => {
