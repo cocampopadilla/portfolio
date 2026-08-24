@@ -7,6 +7,14 @@ interface OverviewSectionProps {
 }
 
 export const OverviewSection: React.FC<OverviewSectionProps> = ({ onNavigateSection }) => {
+  const handleNavigate = (sectionId: string) => {
+    onNavigateSection(sectionId);
+    const el = document.getElementById(sectionId);
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section id="overview" className="space-y-8 animate-fade-in">
       {/* Title Header */}
@@ -53,7 +61,7 @@ export const OverviewSection: React.FC<OverviewSectionProps> = ({ onNavigateSect
         {/* Action Button Row */}
         <div className="mt-6 flex flex-wrap items-center gap-3">
           <button 
-            onClick={() => onNavigateSection('projects')}
+            onClick={() => handleNavigate('projects')}
             className="btn-primary"
           >
             <Code2 className="w-4 h-4" />
