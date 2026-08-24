@@ -46,6 +46,21 @@ export const App: React.FC = () => {
     };
   }, []);
 
+  useEffect(() => {
+    const faviconLink = document.querySelector<HTMLLinkElement>("link[rel*='icon']");
+    if (isAdyenRoute) {
+      document.title = "Candidate Docs | Adyen Docs Excellence Engineering";
+      if (faviconLink) {
+        faviconLink.href = 'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" rx="20" fill="%2300A254"/><text y=".9em" x=".15em" font-size="80" font-weight="bold" fill="white" font-family="sans-serif">A</text></svg>';
+      }
+    } else {
+      document.title = "Cristian Ocampo-Padilla | Resume & Portfolio";
+      if (faviconLink) {
+        faviconLink.href = 'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" rx="22" fill="%230F172A"/><text y=".88em" x=".22em" font-size="70" font-weight="800" fill="%2338BDF8" font-family="system-ui, sans-serif">C</text></svg>';
+      }
+    }
+  }, [isAdyenRoute]);
+
   if (!isAdyenRoute) {
     return <VanillaResumePage darkMode={darkMode} setDarkMode={setDarkMode} />;
   }
