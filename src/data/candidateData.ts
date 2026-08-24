@@ -86,7 +86,7 @@ export const candidateData: CandidateProfile = {
   location: "Chicago, IL",
   email: "cocampopadilla@gmail.com",
   phone: "312-479-3886",
-  github: "github.com/cocampo-pad",
+  github: "github.com/cocampopadilla",
   linkedin: "linkedin.com/in/cocampo-padilla",
   genericTitle: "Software Engineer & QA Engineer",
   bio: "Master of Computer Science graduate from UIUC (GPA 3.74, Completed August 2026) and QA Engineer at Motorola Mobility. Experienced in React, Python, C++, JavaScript, FastAPI, and software test automation. Driven by continuous learning and building high-reliability, developer-centric documentation platforms for Adyen.",
