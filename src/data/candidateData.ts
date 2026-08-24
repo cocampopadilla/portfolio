@@ -56,6 +56,7 @@ export interface ApiEndpoint {
 export interface CandidateProfile {
   name: string;
   title: string;
+  genericTitle?: string;
   targetRole: string;
   targetTeam: string;
   location: string;
@@ -64,6 +65,7 @@ export interface CandidateProfile {
   github: string;
   linkedin: string;
   bio: string;
+  genericBio?: string;
   summaryMetrics: { label: string; value: string; detail: string }[];
   skills: {
     category: string;
@@ -86,12 +88,14 @@ export const candidateData: CandidateProfile = {
   phone: "312-479-3886",
   github: "github.com/cocampo-pad",
   linkedin: "linkedin.com/in/cocampo-padilla",
-  bio: "Master of Computer Science (UIUC, 3.74 GPA) and QA Engineer at Motorola Mobility. Experienced in React, Python, C++, JavaScript, FastAPI, and software test automation. Driven by continuous learning and building high-reliability, developer-centric documentation platforms for Adyen.",
+  genericTitle: "Software Engineer & QA Engineer",
+  bio: "Master of Computer Science graduate from UIUC (GPA 3.74, Completed August 2026) and QA Engineer at Motorola Mobility. Experienced in React, Python, C++, JavaScript, FastAPI, and software test automation. Driven by continuous learning and building high-reliability, developer-centric documentation platforms for Adyen.",
+  genericBio: "Master of Computer Science graduate from UIUC (3.74 GPA, Completed August 2026) and QA Engineer at Motorola Mobility. Experienced in React, TypeScript, Python, C++, FastAPI, and software test automation. Dedicated to writing clean, reliable code and engineering high-impact software systems.",
 
   summaryMetrics: [
-    { label: "Master's Degree", value: "M.C.S.", detail: "UIUC (GPA 3.74 / 4.00)" },
+    { label: "Master's Degree", value: "M.C.S.", detail: "UIUC (GPA 3.74, Completed Aug 2026)" },
     { label: "Bachelor's Degree", value: "B.S. CS", detail: "UIUC (GPA 3.67 / 4.00)" },
-    { label: "Current Role", value: "QA Engineer", detail: "Motorola Mobility (Apr 2026+)" },
+    { label: "Current Role", value: "QA Engineer", detail: "Motorola Mobility (Apr 2026 – Present)" },
     { label: "Work Auth", value: "US Authorized", detail: "Zero Sponsorship Needed" }
   ],
 
@@ -132,11 +136,11 @@ export const candidateData: CandidateProfile = {
       institution: "University of Illinois Urbana-Champaign (UIUC)",
       degree: "Professional Master of Computer Science (MCS)",
       major: "Computer Science",
-      period: "Aug 2025 – Aug 2026",
+      period: "Aug 2025 – Aug 2026 (Completed)",
       location: "Chicago, IL",
       gpa: "3.74 / 4.00",
       highlights: [
-        "3.74/4.00 GPA in advanced graduate computer science curriculum",
+        "Finalized Master of Computer Science degree with a 3.74/4.00 cumulative GPA in August 2026",
         "Focused on Cloud Computing, Machine Learning for Software Engineering, Computer Security, and IoT Systems"
       ],
       coursework: [
