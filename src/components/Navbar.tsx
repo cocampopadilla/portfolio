@@ -4,13 +4,11 @@ import { Search, Moon, Sun, Code, CheckCircle, Terminal } from 'lucide-react';
 interface NavbarProps {
   darkMode: boolean;
   setDarkMode: (val: boolean | ((prev: boolean) => boolean)) => void;
-  onOpenSearch: () => void;
 }
 
 export const Navbar: React.FC<NavbarProps> = ({
   darkMode,
-  setDarkMode,
-  onOpenSearch
+  setDarkMode
 }) => {
   return (
     <header className="sticky top-0 z-30 w-full border-b backdrop-blur-md transition-colors"
@@ -45,26 +43,6 @@ export const Navbar: React.FC<NavbarProps> = ({
             <span>Docs Excellence Applicant</span>
           </div>
         </div>
-
-        {/* Center: Quick Search Trigger */}
-        <button
-          onClick={onOpenSearch}
-          className="flex-1 max-w-md hidden sm:flex items-center justify-between px-3.5 py-1.5 rounded-lg border text-sm transition-all"
-          style={{
-            backgroundColor: 'var(--bg-tag)',
-            borderColor: 'var(--border-color)',
-            color: 'var(--text-muted)'
-          }}
-        >
-          <div className="flex items-center gap-2">
-            <Search className="w-4 h-4 text-gray-400" />
-            <span>Search candidate docs, skills, endpoints...</span>
-          </div>
-          <div className="flex items-center gap-1 font-mono text-xs px-1.5 py-0.5 rounded border" style={{ backgroundColor: 'var(--bg-card)', borderColor: 'var(--border-color)' }}>
-            <span>⌘</span>
-            <span>K</span>
-          </div>
-        </button>
 
         {/* Right Actions */}
         <div className="flex items-center gap-2 sm:gap-3">
