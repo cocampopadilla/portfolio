@@ -97,8 +97,8 @@ export const VanillaResumePage: React.FC<VanillaResumePageProps> = ({ darkMode, 
               <span>{candidateData.github}</span>
             </a>
             <span>•</span>
-            <div className="flex items-center gap-1.5 font-bold text-emerald-600 dark:text-emerald-400">
-              <CheckCircle2 className="w-3.5 h-3.5" />
+            <div className="flex items-center gap-1.5 font-bold text-slate-700 dark:text-slate-300">
+              <CheckCircle2 className="w-3.5 h-3.5 text-slate-500" />
               <span>US Work Authorized</span>
             </div>
           </div>
@@ -141,7 +141,7 @@ export const VanillaResumePage: React.FC<VanillaResumePageProps> = ({ darkMode, 
                 </div>
 
                 {edu.gpa && (
-                  <p className="text-xs font-mono font-semibold text-emerald-600 dark:text-emerald-400">
+                  <p className="text-xs font-mono font-semibold text-slate-700 dark:text-slate-300">
                     GPA: {edu.gpa}
                   </p>
                 )}
@@ -234,7 +234,7 @@ export const VanillaResumePage: React.FC<VanillaResumePageProps> = ({ darkMode, 
                   {proj.description}
                 </p>
 
-                <div className="text-xs font-mono text-emerald-600 dark:text-emerald-400">
+                <div className="text-xs font-mono font-semibold text-slate-700 dark:text-slate-300">
                   Impact: {proj.metrics}
                 </div>
 

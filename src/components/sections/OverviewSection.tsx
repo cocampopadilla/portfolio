@@ -24,7 +24,7 @@ export const OverviewSection: React.FC<OverviewSectionProps> = ({ onNavigateSect
             <CheckCircle2 className="w-3.5 h-3.5 text-[#00A254]" />
             Applicant: {candidateData.name}
           </span>
-          <span className="text-xs font-mono px-2 py-0.5 rounded border bg-emerald-500/10 text-emerald-600 border-emerald-500/20 font-semibold">
+          <span className="badge-adyen font-mono font-semibold">
             Adyen Chicago Docs Excellence Applicant
           </span>
         </div>

@@ -32,7 +32,7 @@ export const EducationSection: React.FC = () => {
                     Verified UIUC Degree
                   </span>
                   {edu.gpa && (
-                    <span className="text-xs font-mono font-bold px-2.5 py-0.5 rounded bg-emerald-500/10 text-emerald-600 border border-emerald-500/20">
+                    <span className="badge-adyen font-mono font-bold">
                       GPA: {edu.gpa}
                     </span>
                   )}

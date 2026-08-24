@@ -103,11 +103,11 @@ export const TableOfContents: React.FC = () => {
           </div>
           <div className="flex items-center justify-between">
             <span style={{ color: 'var(--text-muted)' }}>Degrees:</span>
-            <span className="font-semibold text-emerald-600">UIUC MCS & BS CS</span>
+            <span className="font-semibold" style={{ color: 'var(--text-main)' }}>UIUC MCS & BS CS</span>
           </div>
           <div className="flex items-center justify-between">
             <span style={{ color: 'var(--text-muted)' }}>Sponsorship:</span>
-            <span className="font-semibold text-emerald-600">Not Needed (US Auth)</span>
+            <span className="font-semibold" style={{ color: 'var(--text-main)' }}>Not Needed (US Auth)</span>
           </div>
         </div>
 
