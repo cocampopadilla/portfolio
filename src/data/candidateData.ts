@@ -246,21 +246,6 @@ export const createReservation = async (reservationData: ReservationPayload) => 
         "Comprehensive reproducibility documentation & thermal tuning"
       ],
       metrics: "~100 nanosecond timing precision achieved on embedded hardware"
-    },
-    {
-      id: "proj-3",
-      title: "Adyen Developer Docs & Interactive API Explorer",
-      category: "Docs Engineering",
-      summary: "Interactive developer documentation platform built for Adyen Docs Excellence Team featuring real-time API execution & AI assistant.",
-      description: "Custom-built React 18 + TypeScript documentation hub designed specifically for Adyen's Chicago Docs Excellence Engineering position. Includes live REST request console, keyboard search (Cmd+K), and AI candidate assistant.",
-      techStack: ["React 18", "TypeScript", "Vite", "Tailwind CSS", "REST APIs"],
-      features: [
-        "Interactive API execution console for candidate data endpoints",
-        "Cmd+K global search palette with instant section jumping",
-        "AI Docs Assistant drawer with grounded Q&A and source citations",
-        "Adyen Docs design system with dark/light mode toggle"
-      ],
-      metrics: "< 50ms render response & 100% Adyen Formula alignment"
     }
   ],
 

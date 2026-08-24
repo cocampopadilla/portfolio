@@ -5,8 +5,7 @@ import { candidateData, ProjectItem } from '../../data/candidateData';
 export const ProjectsSection: React.FC = () => {
   const [activeTab, setActiveTab] = useState<Record<string, 'features' | 'code'>>({
     'proj-1': 'features',
-    'proj-2': 'features',
-    'proj-3': 'features'
+    'proj-2': 'features'
   });
   const [copiedId, setCopiedId] = useState<string | null>(null);
 

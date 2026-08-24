@@ -33,7 +33,7 @@ export const navItems: NavItem[] = [
   { id: 'education', label: 'Education (UIUC MCS & BS)', icon: GraduationCap, category: 'GETTING STARTED' },
   { id: 'experience', label: 'Experience & Motorola QA', icon: Briefcase, category: 'GETTING STARTED' },
   
-  { id: 'projects', label: 'Featured Projects', icon: Code2, category: 'TECHNICAL PORTFOLIO', badge: '3 Apps' },
+  { id: 'projects', label: 'Featured Projects', icon: Code2, category: 'TECHNICAL PORTFOLIO', badge: '2 Projects' },
   { id: 'ai-innovation', label: 'QA & Testing Rigor', icon: Bug, category: 'TECHNICAL PORTFOLIO', badge: 'Motorola QA' },
   
   { id: 'adyen-formula', label: 'Adyen Formula Fit', icon: Target, category: 'CULTURE & FIT', badge: '100% Fit' }
